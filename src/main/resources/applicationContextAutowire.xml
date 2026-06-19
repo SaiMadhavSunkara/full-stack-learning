@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="specification" class="com.car.care.Specification">
+        <property name="brand" value="Toyota"/>
+        <property name="model" value="Innova"/>
+        <property name="color" value="Black"/>
+    </bean>
+
+    <bean id="myCar" class="com.car.care.Car" autowire="byName"/>
+
+
+
+</beans>
